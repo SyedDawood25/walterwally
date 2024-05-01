@@ -8,7 +8,7 @@ export const HeroImage = () => {
         <Image 
          src={HeroImg}
          alt = 'Hero Image'
-         className='rounded-3xl flex flex-grow'
+         className='rounded-3xl  object-cover w-full h-[800px]'
         />
     </div>
   )
