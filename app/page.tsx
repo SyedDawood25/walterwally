@@ -1,6 +1,6 @@
 import { BodyText } from "@/components/body/bodyText/BodyText";
 import { BodyGrid } from "@/components/body/bodygrid/BodyGrid";
-import { Footer } from "@/components/footer/Footer";
+import { Footer } from "@/components/Footer/Footer";
 import { Buttons } from "@/components/header/buttons/Buttons";
 import { HeroImage } from "@/components/header/heroimage/HeroImage";
 import { UpperHeader } from "@/components/header/upperheader/UpperHeader";
