@@ -8,12 +8,12 @@ import React from "react";
 
 const Home = () => {
   return (
-    <main className="px-24 py-24 bg-[#0A100D] flex flex-col ">
+    <main className="px-24 py-24 bg-[#0A100D] flex flex-col">
       <UpperHeader />
       <HeroImage />
       <Buttons />
-      <BodyText/>
-      <BodyGrid/>
+      <BodyText />
+      <BodyGrid />
       <Footer />
     </main>
   );

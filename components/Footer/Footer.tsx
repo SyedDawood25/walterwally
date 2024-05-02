@@ -42,7 +42,9 @@ export const Footer = () => {
       </div>
 
       <div className="flex justify-center mt-14">
-        <Button className="bg-[#0A100D] px-12 py-10 rounded-sm  text-[32px] border-[#A8E198] border-[4px] text-[#A8E198]">Generate AI Wallpaper Now</Button>
+        <Button className="bg-[#0A100D] hover:bg-[#A8E198] hover:text-[#0A100D] px-12 py-10 text-[32px] border-[#A8E198] border-[4px] text-[#A8E198] -xlrounded">
+          Generate AI Wallpaper Now
+        </Button>
       </div>
     </div>
   );
