@@ -4,6 +4,7 @@ import download from "../../assets/images/download.svg";
 import aspectRatio from "../../assets/images/aspectRatio.svg";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -42,8 +43,11 @@ export const Footer = () => {
       </div>
 
       <div className="flex justify-center mt-14">
-        <Button className="bg-[#0A100D] hover:bg-[#A8E198] hover:text-[#0A100D] px-12 py-10 text-[32px] border-[#A8E198] border-[4px] text-[#A8E198] -xlrounded">
-          Generate AI Wallpaper Now
+        <Button
+          asChild
+          className="bg-[#0A100D] hover:bg-[#A8E198] hover:text-[#0A100D] px-12 py-10 text-[32px] border-[#A8E198] border-[4px] text-[#A8E198] -xlrounded"
+        >
+          <Link href={"/register"}>Generate AI Wallpaper Now</Link>
         </Button>
       </div>
     </div>

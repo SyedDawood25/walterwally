@@ -1,4 +1,4 @@
-import { Footer } from "@/components/Footer/Footer";
+import { Footer } from "@/components/footer/Footer";
 import { BodyText } from "@/components/body/bodyText/BodyText";
 import { BodyGrid } from "@/components/body/bodygrid/BodyGrid";
 import { Buttons } from "@/components/header/buttons/Buttons";
