@@ -17,8 +17,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "../ui/checkbox";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const RegisterForm = () => {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof registerSchema>>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
@@ -30,7 +33,7 @@ export const RegisterForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof registerSchema>) {
-    console.log(values);
+    router.push("/home");
   }
 
   return (
@@ -85,6 +88,7 @@ export const RegisterForm = () => {
               </FormLabel>
               <FormControl>
                 <Input
+                  type="password"
                   className="bg-transparent border-[#A8E198] text-[#A8E198] py-7"
                   {...field}
                 />

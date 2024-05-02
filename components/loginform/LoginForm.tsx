@@ -16,8 +16,11 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const LoginForm = () => {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -27,7 +30,7 @@ export const LoginForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof loginSchema>) {
-    console.log(values);
+    router.push("/home");
   }
 
   return (
@@ -64,6 +67,7 @@ export const LoginForm = () => {
               </FormLabel>
               <FormControl>
                 <Input
+                  type="password"
                   className="bg-transparent border-[#A8E198] text-[#A8E198] py-7"
                   {...field}
                 />
