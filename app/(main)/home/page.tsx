@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/logo.png";
 import { Button } from "@/components/ui/button";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoPhoneLandscapeOutline } from "react-icons/io5";
+import CatImage1 from "@/assets/images/catImage1.png";
 
 const Home = () => {
   return (

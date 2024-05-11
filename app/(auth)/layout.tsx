@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Background from "../../assets/images/background.svg";
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/logo.png";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface AuthLayoutProps {
 
 const AuthLayout = ({ children }: AuthLayoutProps) => {
   return (
-    <main className="flex h-screen">
+    <main className="flex h-screen bg-[#0A100D]">
       <div className="flex flex-col w-1/2">
         <div className="flex absolute">
           <Image
@@ -19,7 +19,7 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
           />
         </div>
 
-        <div className="flex flex-col justify-evenly my-16 h-full relative p-20">
+        <div className="flex flex-col justify-evenly my-16 gap-y-8 h-full relative p-20">
           <div className="w-[400px]">
             <Image src={Logo} alt="Logo" />
           </div>

@@ -8,13 +8,15 @@ import React from "react";
 
 const Home = () => {
   return (
-    <main className="px-24 py-24 bg-[#0A100D] flex flex-col">
-      <UpperHeader />
-      <HeroImage />
-      <Buttons />
-      <BodyText />
-      <BodyGrid />
-      <Footer />
+    <main className="p-16 bg-[#090F0C] flex flex-col items-center w-full min-h-screen">
+      <div className="max-w-[2000px]">
+        <UpperHeader />
+        <HeroImage />
+        <Buttons />
+        <BodyText />
+        <BodyGrid />
+        <Footer />
+      </div>
     </main>
   );
 };
