@@ -8,7 +8,7 @@ export const UpperHeader = () => {
       <div className="flex md:w-1/2">
         <Image src={Logo} alt="logo" className="w-[150px]" />
       </div>
-      <div className="hidden md:flex text-[#7B9D71] text-[28px] xl:text-[32px] leading-snug w-1/2 justify-end">
+      <div className="hidden md:flex text-[#A8E198] text-[28px] xl:text-[32px] leading-snug w-1/2 justify-end">
         <h2 className="flex w-fit">
           Your personal Wallpaper Generator, bringing creativity and
           customization to your Digital Space!
