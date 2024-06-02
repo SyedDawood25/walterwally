@@ -26,6 +26,9 @@ export default function RootLayout({
           colorText: "#E9EAF2",
           colorTextSecondary: "#E9EAF2",
         },
+        elements: {
+          userButtonAvatarBox: "w-12 h-12"
+        }
       }}
     >
       <html lang="en">

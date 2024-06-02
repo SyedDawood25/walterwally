@@ -9,9 +9,9 @@ interface AuthLayoutProps {
 
 const AuthLayout = ({ children }: AuthLayoutProps) => {
   return (
-    <main className="flex h-screen bg-[#0A100D]">
-      <div className="flex flex-col w-1/2">
-        <div className="flex absolute">
+    <main className="flex flex-col lg:flex-row h-screen bg-[#0A100D]">
+      <div className="flex flex-col lg:w-1/2">
+        <div className="hidden lg:flex absolute">
           <Image
             src={Background}
             alt="Background"
@@ -19,19 +19,19 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
           />
         </div>
 
-        <div className="flex flex-col justify-evenly my-16 gap-y-8 h-full relative p-20">
-          <div className="w-[400px]">
+        <div className="flex flex-col items-center lg:items-start lg:justify-evenly lg:my-16 gap-y-8 h-full relative p-20">
+          <div className="w-[150px] lg:w-[400px]">
             <Image src={Logo} alt="Logo" />
           </div>
 
-          <div className="flex flex-col text-white">
+          <div className="hidden lg:flex flex-col text-white">
             <h3 className="text-6xl font-semibold">Unleash your</h3>
             <h2 className="text-8xl font-semibold">Imagination.</h2>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center items-center w-1/2 bg-[#090F0C]">
+      <div className="flex justify-center h-full items-center mb-8 lg:w-1/2 bg-[#090F0C]">
         {children}
       </div>
     </main>

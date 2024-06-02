@@ -1,24 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import Logo from "@/assets/images/logo.png";
 import { Button } from "@/components/ui/button";
-import { MdOutlineAccountCircle } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoPhoneLandscapeOutline } from "react-icons/io5";
-import CatImage1 from "@/assets/images/catImage1.png";
 
 const Home = () => {
   return (
-    <main className="flex flex-col p-20 bg-[#0A100D] h-full gap-y-12">
-      <div className="flex justify-between items-center">
-        <div className="w-[150px]">
-          <Image src={Logo} alt="Logo" />
-        </div>
-        <div>
-          <MdOutlineAccountCircle className="text-[#A8E198]" size={70} />
-        </div>
-      </div>
-
+    <main className="flex flex-col gap-y-4">
       <div className="flex flex-col gap-y-4">
         <h1 className="text-xl font-bold text-[#A8E198]">Orientation</h1>
         <div className="flex gap-x-10">
